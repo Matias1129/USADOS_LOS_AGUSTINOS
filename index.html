@@ -7,15 +7,41 @@
         body {
            margin: 0;
            font-family: Arial;
-           background: #1a1a1a;
+           background: url("https://images.unsplash.com/photo-1581578731548-c64695cc6952");
+           background-size: cover;
+           background-position: center;
+           background-attachment: fixed;
            color: white;
         }  
 
         header {
-            background: #000;
+            background: #000000;
             color: #d4af37;
             text-align: center;
             padding: 30px;
+        }
+
+        nav {
+            background: #111;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #d4af37;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 40px;
+            background: #111;
         }
 
         .productos {
@@ -32,11 +58,44 @@
             width: 200px;
             text-align: center;
             border: 1px solid #d4af37;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
         }
 
         .card img {
             width: 100%;
             border-radius: 10px;
+        }
+
+        footer {
+            background: #000000;
+            color: #d4af37;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #d4af37;
+        }
+
+        /* BOTÓN WHATSAPP */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .whatsapp:hover {
+            background: #1ebe5d;
         }
     </style>
 </head>
@@ -45,8 +104,19 @@
 
 <header>
     <h1>USADOS LOS AGUSTINOS</h1>
-    <p>Neveras y lavadoras al mejor precio !!</p>
+    <p>Más de 20 años de experiencia en servicio técnico</p>
 </header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<div class="banner">
+    <h2>NEVERAS Y LAVADORAS AL MEJOR PRECIO !!</h2>
+    <p>Servicio técnico especializado</p>
+</div>
 
 <section class="productos">
 
@@ -63,6 +133,17 @@
     </div>
 
 </section>
+
+<footer>
+    <p>📍 Calle 18 #19-25 Local 2</p>
+    <p>📞 316 536 1616</p>
+    <p>Servicio técnico con más de 20 años de experiencia</p>
+</footer>
+
+<!-- BOTÓN WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/573165361616" target="_blank">
+    💬
+</a>
 
 </body>
 </html>
