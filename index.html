@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usados los Agustinos</title>
 
     <style>
@@ -10,19 +11,20 @@
            background: url("usados.jpg");
            background-size: cover;
            background-position: center;
-           background-attachment: fixed;
+           background-attachment: scroll;
            color: white;
         }  
 
         header {
-            background: #000000;
+            background: transparent;
             color: #d4af37;
             text-align: center;
             padding: 30px;
         }
 
         nav {
-            background: #111;
+            background: rgba(0,0,0,0.2);
+            backdrop-filter: blur(5px);
             padding: 10px;
             text-align: center;
         }
@@ -41,7 +43,7 @@
         .banner {
             text-align: center;
             padding: 40px;
-            background: #111;
+            background: transparent;
         }
 
         .productos {
@@ -53,12 +55,12 @@
         }
 
         .card {
-            background: #111;
+            background: rgba(0,0,0,0.3);
+            border: 1px solid #d4af37;
             padding: 15px;
             border-radius: 10px;
             width: 200px;
             text-align: center;
-            border: 1px solid #d4af37;
             transition: transform 0.3s;
         }
 
@@ -67,19 +69,21 @@
         }
 
         .card img {
-            width: 100%;
-            border-radius: 10px;
-        }
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+          border-radius: 10px;
+      }
 
         footer {
-            background: #000000;
+            background: transparent;
             color: #d4af37;
             text-align: center;
             padding: 20px;
         }
 
-        h1, h2, h3 {
-            color: #d4af37;
+        h1, h2, h3, p {
+            text-shadow: 2px 2px 5px black;
         }
 
         /* BOTÓN WHATSAPP */
@@ -98,6 +102,23 @@
         .whatsapp:hover {
             background: #1ebe5d;
         }
+       @media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .banner h2 {
+        font-size: 18px;
+    }
+
+    .productos {
+        padding: 10px;
+    }
+}
     </style>
 </head>
 
@@ -124,14 +145,14 @@
     <div class="card">
         <img src="nevera.jpg">
         <h3>Neveras</h3>
-        <p>La mejor calidad</p>
+        <p>La mejor caliad</p>
     </div>
 
     <div class="card">
         <img src="lavadora.jpg">
         <h3>Lavadoras</h3>
         <p>Garantía de 3 meses</p>
-    </div>
+    </div>d
 
 </section>
 
